@@ -1,0 +1,935 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+========================================================================== */
+
+/**
+* 1. Correct the line height in all browsers.
+* 2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+    ========================================================================== */
+
+/**
+* Remove the margin in all browsers.
+*/
+
+body {
+    margin: 0;
+}
+
+/**
+* Render the `main` element consistently in IE.
+*/
+
+main {
+    display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+    ========================================================================== */
+
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+    ========================================================================== */
+
+/**
+* Remove the gray background on active links in IE 10.
+*/
+
+a {
+    background-color: transparent;
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+
+small {
+    font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+    ========================================================================== */
+
+/**
+* Remove the border on images inside links in IE 10.
+*/
+
+img {
+    border-style: none;
+}
+
+/* Forms
+    ========================================================================== */
+
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+
+textarea {
+    overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+    ========================================================================== */
+
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+
+details {
+    display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+    ========================================================================== */
+
+/**
+* Add the correct display in IE 10+.
+*/
+
+template {
+    display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+
+[hidden] {
+    display: none;
+}
+
+html, body {
+    max-width: 100vw;
+    min-width: 960px;
+}
+
+@font-face {
+    font-family: 'normal-font';
+    src: url(./../fonts/UbuntuMono-R.ttf);
+}
+
+:root {
+    --normal-font: 'normal-font';
+    --row-height: 35px;
+    /* 基本按钮 */
+    /* 深色 */
+    /* 默认 */
+    --base-border-color: #dcdfe6;
+    --base-background-color: #fff;
+    --base-color: #606266;
+    /* 鼠标经过 */
+    --base-hover-border-color: #c6e2ff;
+    --base-hover-background-color: #ecf5ff;
+    --base-hover-color: #409eff;
+    /* 禁用 */
+    --base-disable-border-color: #ebeef5;
+    --base-disable-background-color: #fff;
+    --base-disable-color: #c0c4cc;
+    /* 浅色 */
+    /* 默认 */
+    --base-plain-border-color: #dcdfe6;
+    --base-plain-background-color: #fff;
+    --base-plain-color: #606266;
+    /* 鼠标经过 */
+    --base-plain-hover-border-color: #409eff;
+    --base-plain-hover-background-color: #fff;
+    --base-plain-hover-color: #409eff;
+    /* 禁用 */
+    --base-plain-disable-border-color: #ebeef5;
+    --base-plain-disable-background-color: #fff;
+    --base-plain-disable-color: #c0c4cc;
+
+    /* 主要按钮 */
+    /* 深色 */
+    /* 默认 */
+    --primary-border-color: #409eff;
+    --primary-background-color: #409eff;
+    --primary-color: #fff;
+    /* 鼠标经过 */
+    --primary-hover-border-color: #66b1ff;
+    --primary-hover-background-color: #66b1ff;
+    --primary-hover-color: #fff;
+    /* 禁用 */
+    --primary-disable-border-color: #a0cfff;
+    --primary-disable-background-color: #a0cfff;
+    --primary-disable-color: #fff;
+    /* 浅色 */
+    /* 默认 */
+    --primary-plain-border-color: #b3d8ff;
+    --primary-plain-background-color: #ecf5ff;
+    --primary-plain-color: #409eff;
+    /* 鼠标经过 */
+    --primary-plain-hover-border-color: #409eff;
+    --primary-plain-hover-background-color: #409eff;
+    --primary-plain-hover-color: #ffffff;
+    /* 禁用 */
+    --primary-plain-disable-border-color: #d9ecff;
+    --primary-plain-disable-background-color: #ecf5ff;
+    --primary-plain-disable-color: #8cc5ff;
+    
+
+    /* 成功按钮 */
+    /* 深色 */
+    /* 默认 */
+    --success-border-color: #67c23a;
+    --success-background-color: #67c23a;
+    --success-color: #fff;
+    /* 鼠标经过 */
+    --success-hover-border-color: #85ce61;
+    --success-hover-background-color: #85ce61;
+    --success-hover-color: #fff;
+    /* 禁用 */
+    --success-disable-border-color: #b3e19d;
+    --success-disable-background-color: #b3e19d;
+    --success-disable-color: #fff;
+    /* 浅色 */
+    /* 默认 */
+    --success-plain-border-color: #c2e7b0;
+    --success-plain-background-color: #f0f9eb;
+    --success-plain-color: #67c23a;
+    /* 鼠标经过 */
+    --success-plain-hover-border-color: #67c23a;
+    --success-plain-hover-background-color: #67c23a;
+    --success-plain-hover-color: #fff;
+    /* 禁用 */
+    --success-plain-disable-border-color: #e1f3d8;
+    --success-plain-disable-background-color: #f0f9eb;
+    --success-plain-disable-color: #a4da89;
+    
+
+    /* 信息按钮 */
+    /* 深色 */
+    /* 默认 */
+    --info-border-color: #909399;
+    --info-background-color: #909399;
+    --info-color: #fff;
+    /* 鼠标经过 */
+    --info-hover-border-color: #a6a9ad;
+    --info-hover-background-color: #a6a9ad;
+    --info-hover-color: #fff;
+    /* 禁用 */
+    --info-disable-border-color: #c8c9cc;
+    --info-disable-background-color: #c8c9cc;
+    --info-disable-color: #fff;
+    /* 浅色 */
+    /* 默认 */
+    --info-plain-border-color: #d3d4d6;
+    --info-plain-background-color: #f4f4f5;
+    --info-plain-color: #909399;
+    /* 鼠标经过 */
+    --info-plain-hover-border-color: #909399;
+    --info-plain-hover-background-color: #909399;
+    --info-plain-hover-color: #fff;
+    /* 禁用 */
+    --info-plain-disable-border-color: #e9e9eb;
+    --info-plain-disable-background-color: #f4f4f5;
+    --info-plain-disable-color: #bcbec2;
+    
+
+    /* 警告按钮 */
+    /* 深色 */
+    /* 默认 */
+    --warn-border-color: #e6a23c;
+    --warn-background-color: #e6a23c;
+    --warn-color: #fff;
+    /* 鼠标经过 */
+    --warn-hover-border-color: #ebb563;
+    --warn-hover-background-color: #ebb563;
+    --warn-hover-color: #fff;
+    /* 禁用 */
+    --warn-disable-border-color: #f3d19e;
+    --warn-disable-background-color: #f3d19e;
+    --warn-disable-color: #fff;
+    /* 浅色 */
+    /* 默认 */
+    --warn-plain-border-color: #f5dab1;
+    --warn-plain-background-color: #fdf6ec;
+    --warn-plain-color: #e6a23c;
+    /* 鼠标经过 */
+    --warn-plain-hover-border-color: #e6a23c;
+    --warn-plain-hover-background-color: #e6a23c;
+    --warn-plain-hover-color: #fff;
+    /* 禁用 */
+    --warn-plain-disable-border-color: #faecd8;
+    --warn-plain-disable-background-color: #fdf6ec;
+    --warn-plain-disable-color: #f0c78a;
+    
+
+    /* 危险按钮 */
+    /* 深色 */
+    /* 默认 */
+    --danger-border-color: #f56c6c;
+    --danger-background-color: #f56c6c;
+    --danger-color: #fff;
+    /* 鼠标经过 */
+    --danger-hover-border-color: #f78989;
+    --danger-hover-background-color: #f78989;
+    --danger-hover-color: #fff;
+    /* 禁用 */
+    --danger-disable-border-color: #fab6b6;
+    --danger-disable-background-color: #fab6b6;
+    --danger-disable-color: #fff;
+    /* 浅色 */
+    /* 默认 */
+    --danger-plain-border-color: #fbc4c4;
+    --danger-plain-background-color: #fef0f0;
+    --danger-plain-color: #f56c6c;
+    /* 鼠标经过 */
+    --danger-plain-hover-border-color: #f56c6c;
+    --danger-plain-hover-background-color: #f56c6c;
+    --danger-plain-hover-color: #fff;
+    /* 禁用 */
+    --danger-plain-disable-border-color: #fde2e2;
+    --danger-plain-disable-background-color: #fef0f0;
+    --danger-plain-disable-color: #f9a7a7;
+    
+
+
+    --button-border-radius: 5px;
+    --button-font-size: 14px;
+}
+
+.page {
+    width: 50vw;
+    min-width: 500px;
+    float: left;
+    font-family: var(--normal-font);
+}
+
+.row {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.doc-button-group {
+    margin: 5px 0px 0px 5px;
+    float: left;
+}
+
+.doc-button-group > .doc-button, .doc-button-group > .doc-button-2x, .doc-button-group > .doc-button-3x {
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.doc-button-group > .doc-button:first-child, .doc-button-group > .doc-button-2x:first-child, .doc-button-group > .doc-button-3x:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.doc-button-group > .doc-button:last-child, .doc-button-group > .doc-button-2x:last-child, .doc-button-group > .doc-button-3x:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.round {
+    border-radius: 14px !important;
+}
+
+.base {
+    background-color: var(--base-background-color);
+    color: var(--base-color);
+    border: solid 1px var(--base-border-color);
+    transition: all .1s linear;
+}
+.base-disable {
+    background-color: var(--base-disable-background-color);
+    color: var(--base-disable-color);
+    border: solid 1px var(--base-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.base-plain-disable {
+    background-color: var(--base-plain-disable-background-color);
+    color: var(--base-plain-disable-color);
+    border: solid 1px var(--base-plain-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.base:hover {
+    color: var(--base-hover-color);
+    background-color: var(--base-hover-background-color);
+    border: solid 1px var(--base-hover-border-color);
+}
+
+.primary {
+    background-color: var(--primary-background-color);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-border-color);
+    transition: all .1s linear;
+}
+.primary-disable {
+    background-color: var(--primary-disable-background-color);
+    color: var(--primary-disable-color);
+    border: solid 1px var(--primary-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.primary-plain-disable {
+    background-color: var(--primary-plain-disable-background-color);
+    color: var(--primary-plain-disable-color);
+    border: solid 1px var(--primary-plain-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.primary:hover {
+    color: var(--primary-hover-color);
+    background-color: var(--primary-hover-background-color);
+    border: solid 1px var(--primary-hover-border-color);
+}
+
+.success {
+    background-color: var(--success-background-color);
+    color: var(--success-color);
+    border: solid 1px var(--success-border-color);
+    transition: all .1s linear;
+}
+.success-plain-disable {
+    background-color: var(--success-plain-disable-background-color);
+    color: var(--success-plain-disable-color);
+    border: solid 1px var(--success-plain-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.success-disable {
+    background-color: var(--success-disable-background-color);
+    color: var(--success-disable-color);
+    border: solid 1px var(--success-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.success:hover {
+    color: var(--success-hover-color);
+    background-color: var(--success-hover-background-color);
+    border: solid 1px var(--success-hover-border-color);
+}
+
+.info {
+    background-color: var(--info-background-color);
+    color: var(--info-color);
+    border: solid 1px var(--info-border-color);
+    transition: all .1s linear;
+}
+.info-disable {
+    background-color: var(--info-disable-background-color);
+    color: var(--info-disable-color);
+    border: solid 1px var(--info-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.info-plain-disable {
+    background-color: var(--info-plain-disable-background-color);
+    color: var(--info-plain-disable-color);
+    border: solid 1px var(--info-plain-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.info:hover {
+    color: var(--info-hover-color);
+    background-color: var(--info-hover-background-color);
+    border: solid 1px var(--info-hover-border-color);
+}
+
+.warn {
+    background-color: var(--warn-background-color);
+    color: var(--warn-color);
+    border: solid 1px var(--warn-border-color);
+    transition: all .1s linear;
+}
+.warn-disable {
+    background-color: var(--warn-disable-background-color);
+    color: var(--warn-disable-color);
+    border: solid 1px var(--warn-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.warn-plain-disable {
+    background-color: var(--warn-plain-disable-background-color);
+    color: var(--warn-plain-disable-color);
+    border: solid 1px var(--warn-plain-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.warn:hover {
+    color: var(--warn-hover-color);
+    background-color: var(--warn-hover-background-color);
+    border: solid 1px var(--warn-hover-border-color);
+}
+
+.danger {
+    background-color: var(--danger-background-color);
+    color: var(--danger-color);
+    border: solid 1px var(--danger-border-color);
+    transition: all .1s linear;
+}
+.danger-disable {
+    background-color: var(--danger-disable-background-color);
+    color: var(--danger-disable-color);
+    border: solid 1px var(--danger-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.danger-plain-disable {
+    background-color: var(--danger-plain-disable-background-color);
+    color: var(--danger-plain-disable-color);
+    border: solid 1px var(--danger-plain-disable-border-color) !important;
+    cursor: not-allowed !important;
+}
+.danger:hover {
+    color: var(--danger-hover-color);
+    background-color: var(--danger-hover-background-color);
+    border: solid 1px var(--danger-hover-border-color);
+}
+
+.base-plain {
+    background-color: var(--base-plain-background-color);
+    color: var(--base-plain-color);
+    border: solid 1px var(--base-plain-border-color);
+    transition: all .1s linear;
+}
+.base-plain:hover {
+    color: var(--base-plain-hover-color);
+    background-color: var(--base-plain-hover-background-color);
+    border: solid 1px var(--base-plain-hover-border-color);
+}
+
+.primary-plain {
+    background-color: var(--primary-plain-background-color);
+    color: var(--primary-plain-color);
+    border: solid 1px var(--primary-plain-border-color);
+    transition: all .1s linear;
+}
+.primary-plain:hover {
+    color: var(--primary-plain-hover-color);
+    background-color: var(--primary-plain-hover-background-color);
+    border: solid 1px var(--primary-plain-hover-border-color);
+}
+
+.success-plain {
+    background-color: var(--success-plain-background-color);
+    color: var(--success-plain-color);
+    border: solid 1px var(--success-plain-border-color);
+    transition: all .1s linear;
+}
+.success-plain:hover {
+    color: var(--success-plain-hover-color);
+    background-color: var(--success-plain-hover-background-color);
+    border: solid 1px var(--success-plain-hover-border-color);
+}
+
+.info-plain {
+    background-color: var(--info-plain-background-color);
+    color: var(--info-plain-color);
+    border: solid 1px var(--info-plain-border-color);
+    transition: all .1s linear;
+}
+.info-plain:hover {
+    color: var(--info-plain-hover-color);
+    background-color: var(--info-plain-hover-background-color);
+    border: solid 1px var(--info-plain-hover-border-color);
+}
+
+.warn-plain {
+    background-color: var(--warn-plain-background-color);
+    color: var(--warn-plain-color);
+    border: solid 1px var(--warn-plain-border-color);
+    transition: all .1s linear;
+}
+.warn-plain:hover {
+    color: var(--warn-plain-hover-color);
+    background-color: var(--warn-plain-hover-background-color);
+    border: solid 1px var(--warn-plain-hover-border-color);
+}
+
+.danger-plain {
+    background-color: var(--danger-plain-background-color);
+    color: var(--danger-plain-color);
+    border: solid 1px var(--danger-plain-border-color);
+    transition: all .1s linear;
+}
+.danger-plain:hover {
+    color: var(--danger-plain-hover-color);
+    background-color: var(--danger-plain-hover-background-color);
+    border: solid 1px var(--danger-plain-hover-border-color);
+}
+
+.doc-button {
+    height: 28px;
+    padding: 0px 9px 0px 9px;
+    text-decoration: none;
+    float: left;
+    line-height: 28px;
+    border-radius: 5px;
+    font-size: var(--button-font-size);
+    margin: 5px 0px 0px 5px;
+    box-sizing: content-box;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+.doc-button-2x {
+    height: 35px;
+    padding: 0px 13px 0px 13px;
+    text-decoration: none;
+    float: left;
+    line-height: 35px;
+    border-radius: 5px;
+    font-size: var(--button-font-size);
+    margin: 5px 0px 0px 5px;
+    box-sizing: content-box;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+.doc-button-3x {
+    height: 40px;
+    padding: 0px 13px 0px 13px;
+    text-decoration: none;
+    float: left;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: var(--button-font-size);
+    margin: 5px 0px 0px 5px;
+    box-sizing: content-box;
+    display: block;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
+.doc-button:active, .doc-button-2x:active, .doc-button-3x:active {
+    border: #3e3e3e30 solid 1px;
+}
+
+.doc-menu {
+    width: 100vw;
+    height: 50px;
+}
+.doc-menu > .menu-list {
+    width: 50vw;
+    min-width: 500px;
+    float: left;
+    font-family: var(--normal-font);
+    padding: 0px;
+}
+.doc-menu > .menu-list > li {
+    padding: 0px 10px 0px 10px;
+    list-style: none;
+    float: left;
+    font-size: 15px;
+    line-height: 50px;
+    height: 50px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+.doc-menu > .menu-list > li > ul {
+    box-shadow: 0 15 12 10 #3e3e3e;
+    position: absolute;
+    top: 55px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s .3s ease-in-out;
+}
+.doc-menu > .menu-list > li:hover {
+    background-color: #99999920;
+}
+.doc-menu > .menu-list > li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+.doc-menu > .menu-list > li > ul > li {
+    transition: all .2s linear;
+    padding: 0px 20px 0px 20px;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    list-style: none;
+}
+.doc-menu > .menu-list > li > ul > li:hover {
+    background-color: #99999920;
+}
+.doc-message-box {
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    user-select: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility,opacity .25s linear;
+}
+.doc-message-box > .header {
+    width: calc(100% - 10px);
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: #dfdfdf80;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0px 0px 0px 10px;
+}
+.doc-message-box > .content {
+    width: calc(100% - 10px);
+    height: 120px;
+    background-color: #eeeeee;
+    padding: 10px 0px 0px 10px;
+}
+.doc-message-box > .footer {
+    width: 100%;
+    height: 40px;
+    background-color: #dfdfdf80;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.doc-message-box > .cover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}

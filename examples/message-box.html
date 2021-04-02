@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../doc-ui/doc-ui.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="row">
+            <div class="doc-button primary" col="1" onclick="docShowMessageBox({el: '#message-box'})" b:height="50px" b:line-height="50px">点击显示消息框</div>
+        </div>
+    </div>
+
+    <div class="doc-message-box" id="message-box">
+        <div class="header">
+            <span class="text">我是消息框</span>
+        </div>
+        <div class="content">
+            <span class="text">内容</span>
+        </div>
+        <div class="footer">
+            <div class="doc-button primary" col="1-3" onclick="docHideMessageBox({el: '#message-box'})">确定</div>
+            <div class="doc-button warn" col="1-3" onclick="docHideMessageBox({el: '#message-box'});docShowMessageBox({el: '#message-box-ig'});">忽略</div>
+            <div class="doc-button base" col="1-3" onclick="docHideMessageBox({el: '#message-box'})">取消</div>
+        </div>
+        <div class="cover"></div>
+    </div>
+
+    <div class="doc-message-box" id="message-box-ig">
+        <div class="header">
+            <span class="text">警告</span>
+        </div>
+        <div class="content">
+            <span class="text">你确定要忽略该建议吗？</span>
+        </div>
+        <div class="footer">
+            <div class="doc-button danger" col="1-2" onclick="docHideMessageBox({el: '#message-box-ig'})">确定</div>
+            <div class="doc-button base" col="1-2" onclick="docHideMessageBox({el: '#message-box-ig'})">取消</div>
+        </div>
+        <div class="cover"></div>
+    </div>
+
+    <script src="./../doc-ui/doc-ui.js"></script>
+</body>
+</html>
